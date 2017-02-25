@@ -26,3 +26,37 @@
 
 .menu-item-admin{
 }
+
+input{
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+
+.bar-header {
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+
+.fondo {
+	background: url('../img/fondo.jpg') no-repeat center;
+	border-style: url('../img/fondo.jpg') no-repeat center;
+}
+
+.menue {
+    background-image:  url("../img/menu.jpg");
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+}
+
+.item .item-content {
+  background-color: transparent !important;
+}

@@ -1,10 +1,10 @@
-<ion-view title="Perfil" id="page8">
+<ion-view title="Mis Batallas" id="page8" class="fondo">
   <ion-content padding="true" class="has-header">
-    <h3>Batallas Creadas</h3>
+    <h3 style="color:white">Batallas Creadas</h3>
      <div ng-repeat="info in infos" ng-if="info.P1.split('-')[1] == userid && info.turno!='Nadie'" >
         <div class="list card" id="home-card21">
           <a class="cardClick" ng-click="goToBatalla(info)" ui-sref="menu.batalla">
-            <ion-item class="item-avatar" id="home-list-item6">
+            <ion-item class="item-avatar" id="home-list-item6" >
               <h2>Creada por: {{info.P1.split('-')[0]}}</h2>
               <h2>Aceptada por: {{(info.P2.split('-')[0]=='')?'Nadie':info.P2.split('-')[0]}}</h2>
               <p>Monto a apostar: {{info.monto}} </p>
@@ -16,7 +16,7 @@
         </div>
      </div>
 
-     <h3>Batallas Comenzadas</h3>
+     <h3 style="color:white">Batallas Comenzadas</h3>
       <div ng-repeat="info in infos" ng-if="info.P2.split('-')[1] == userid && info.turno!='Nadie'" >
         <div class="list card" id="home-card21">
           <a class="cardClick" ng-click="goToBatalla(info)" ui-sref="menu.batalla">
@@ -30,7 +30,7 @@
           </a>
         </div>
      </div>
-     <h3>Batallas Terminadas</h3>
+     <h3 style="color:white">Batallas Terminadas</h3>
       <div ng-repeat="info in infos" ng-if="info.turno=='Nadie'" >
         <div class="list card" id="home-card21">
             <ion-item class="item-avatar" id="home-list-item6">

@@ -49,7 +49,7 @@ angular.module('app.controllers')
        }
        else{
               var myPopup = $ionicPopup.alert({
-              template: 'No elegiste posición para tu barquito',
+              template: 'No elegiste posición',
               title: 'Nop'
               });
        }

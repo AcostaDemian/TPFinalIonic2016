@@ -1,10 +1,11 @@
-<ion-view title="Batalla" id="page5">
+<ion-view title="Batalla" id="page5" class="fondo">
   <ion-content padding="true" class="has-header">
-    <div class="jugador1" ng-if="Batalla.P1=='' || Batalla.P1.split('-')[1] == userid">
+    <div class="jugador1" ng-if="Batalla.P1=='' || Batalla.P1.split('-')[1] == userid"
+    style="width:500px;margin-right: auto; margin-left: auto;">
         <div class="casillas" ng-if="Batalla.P2 != ''">
             <div id="batalla-button-bar1" class="button-bar">
-              <button id="batalla-button6"ng-class="[{cUnselected:eligeJugador[0]==0},{cSelected:eligeJugador[0]==1}]" ng-disabled="Batalla.turno=='J2'" class="button-positive  button-block casilla" ng-click="selectCasilla([1,0,0,0],3)">1</button>
-              <button id="batalla-button7"ng-class="[{cUnselected:eligeJugador[1]==0},{cSelected:eligeJugador[1]==1}]" ng-disabled="Batalla.turno=='J2'" class="button-positive  button-block casilla" ng-click="selectCasilla([0,1,0,0],3)">2</button>
+              <button id="batalla-button6" ng-class="[{cUnselected:eligeJugador[0]==0},{cSelected:eligeJugador[0]==1}]" ng-disabled="Batalla.turno=='J2'" class="button-positive  button-block casilla" ng-click="selectCasilla([1,0,0,0],3)">1</button>
+              <button id="batalla-button7" ng-class="[{cUnselected:eligeJugador[1]==0},{cSelected:eligeJugador[1]==1}]" ng-disabled="Batalla.turno=='J2'" class="button-positive  button-block casilla" ng-click="selectCasilla([0,1,0,0],3)">2</button>
             </div>
             <div id="batalla-button-bar2" class="button-bar">
               <button id="batalla-button9" ng-class="[{cUnselected:eligeJugador[2]==0},{cSelected:eligeJugador[2]==1}]" ng-disabled="Batalla.turno=='J2'" class="button-positive  button-block casilla" ng-click="selectCasilla([0,0,1,0],3)">3</button>
@@ -27,9 +28,10 @@
             <input type="number" step="1" no-float ng-disabled="Batalla.P1!=''"   placeholder="Ingrese el Monto" name="Batalla.monto" ng-model="Batalla.monto">
           </label>
         </div>
-        <button  ng-if="Batalla.P1 != '' && Batalla.P2 != '' && Batalla.turno=='J1'" id="batalla-button12" class="button button-positive  button-block" ng-click="elegirJugada(false)">Elegir jugada</button>
+        <button  ng-if="Batalla.P1 != '' && Batalla.P2 != '' && Batalla.turno=='J1'" id="batalla-button12" class="button button-assertive  button-block" ng-click="elegirJugada(false)">Elegir jugada</button>
     </div>
-    <div class="jugador2" ng-if="Batalla.P1!='' && Batalla.P1.split('-')[1] != userid ">
+    <div class="jugador2" ng-if="Batalla.P1!='' && Batalla.P1.split('-')[1] != userid "
+    style="width:500px;margin-right: auto; margin-left: auto;">
        <div class="casillas" ng-if="Batalla.P2 != ''">
             <div id="batalla-button-bar1" class="button-bar">
               <button id="batalla-button6" ng-class="[{cUnselected:eligeJugador[0]==0},{cSelected:eligeJugador[0]==1}]"  ng-disabled="Batalla.turno=='J1'" class=" button-positive  button-block casilla " ng-click="selectCasilla([1,0,0,0],4)">1</button>
@@ -59,7 +61,7 @@
         <button  ng-if="Batalla.P1 != '' && Batalla.P2 != '' && Batalla.turno=='J2'" id="batalla-button12" class="button button-positive  button-block" ng-click="elegirJugada(true)">Elegir jugada</button>
     </div>
 
-    <button  ng-if="Batalla.P1 == ''" id="batalla-button12" class="button button-positive  button-block" ng-click="crearBatalla()">Crear Batalla</button>
-    <button  ng-if="Batalla.P1 != '' && Batalla.P2 == '' && Batalla.P1.split('-')[1] != userid" id="batalla-button12" class="button button-positive  button-block" ng-click="comenzarBatalla()">Comenzar Batalla</button>
+    <button  ng-if="Batalla.P1 == ''" id="batalla-button12" class="button button-assertive  button-block" ng-click="crearBatalla()" >Crear Batalla</button>
+    <button  ng-if="Batalla.P1 != '' && Batalla.P2 == '' && Batalla.P1.split('-')[1] != userid" id="batalla-button12" class="button button-assertive  button-block" ng-click="comenzarBatalla()">Comenzar Batalla</button>
   </ion-content>
 </ion-view>
