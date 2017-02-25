@@ -1,15 +1,16 @@
 # TPFinalIonic2016
-Dos arrays, uno para cada jugador. Cada posicion es un casilla, y se almacena la cantidad apostada para esa casilla
-Para elegir casilla, clickear en boton e ingresar monton en input. Al clickear en boton "Crear Batalla" verificar que se tenga monto disponible, y si se tiene se crea y resta los creditos usados
-Al elegir una partida creada, elegir tu casilla igual que al crear
 
-Si aceptan un desafio tuyo, te llega una notificacion push y tenes que elegir una casilla para adivinar la que eligio el contrincante
-Al elegir, te avisa si ganaste, perdiste, emptaste o ninguno gano, si se da la ultima, le vuelve a tocar al jugador 1, sino se reparte los creditos
+### ![Demian](https://avatars0.githubusercontent.com/u/21180289?v=3&s=50) [Demian Acosta](https://github.com/AcostaDemian)
 
-# IONIC VIEW
+# IonicView ID
 5bc4affe
 
- 
+##Info
+* Cuenta con un Login y Registro desde la base de datos
+* Crear batallas nuevas
+* Aceptar batallas
+* Generar creditos y carga de estos
+* Ver batallas jugadas con detalle
 
-
-
+##Faltante
+* Push notification
