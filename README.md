@@ -3,7 +3,7 @@
 ### ![Demian](https://avatars0.githubusercontent.com/u/21180289?v=3&s=50) [Demian Acosta](https://github.com/AcostaDemian)
 
 # IonicView ID
-5bc4affe
+fb56b2e0
 
 ##Info
 * Cuenta con un Login y Registro desde la base de datos
